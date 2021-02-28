@@ -55,7 +55,7 @@ sub create_list {
 	if ($return_array[20]=~/\w+/) {
 		open(IN, $ARGV[0])||die "$!"; 
 		open(OUT,">>Result.txt")||die "$!"; 
-		print OUT "序列名\t序列氨基酸总数\tmotif位置\tmotif多肽\t出现次数\n";
+		print OUT "搴忓垪鍚峔t搴忓垪姘ㄥ熀閰告�绘暟\tmotif浣嶇疆\tmotif澶氳偨\t鍑虹幇娆℃暟\n";
 		local $/ = ">";
 		my %hash =();
 		$no_heads =0;
@@ -103,4 +103,3 @@ sub create_list {
 }
 close(IN);
 close(OUT);
-
